@@ -1,5 +1,9 @@
 **Table of Contents for Memos**
 
+* metropolitansky-210302.md    Updating the scraper's account filters
+
+Outlines and explains another round of changes to the list of accounts the scraper is filtering for.
+
 * metropolitansky-200925.md    Updating the scraper's account filters
 
 Outlines and explains changes to the list of accounts the scraper is filtering for.
