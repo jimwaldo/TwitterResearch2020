@@ -53,8 +53,12 @@ if __name__ =='__main__':
         sys.exit(1)
 
     f_list = get_flist(sys.argv[1], sys.argv[2])
-    comb_tweet_l = build_tweet_list(f_list)
     out_fname = '-'.join(['combined_tweets', sys.argv[2]])
     out_fname = '.'.join([out_fname, 'pkl'])
     out_name = '/'.join([sys.argv[1], out_fname])
+    if os.path.exists(out_name):
+        print('Output file already exists...Continue? [y/n]')
+        if (input() != 'y'):
+            exit()
+    comb_tweet_l = build_tweet_list(f_list)
     ut.write_pkl(out_name, comb_tweet_l)

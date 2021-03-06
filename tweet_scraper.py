@@ -87,15 +87,16 @@ class MyListener(StreamListener):
         try:
             #self.outfile.write(t_data)
             jt = json.loads(t_data)
-            self.out_buffer.append(tt.tweet(jt))
-            if self.count < 1000:
-                self.count += 1
-            else:
-                self.count = 1
-                self.write_file()
-                if self.check_new_date():
-                    self.use_file()
-                time.sleep(60 * random.randint(1,60))
+            if 'id_str' in jt:
+                self.out_buffer.append(tt.tweet(jt))
+                if self.count < 1000:
+                    self.count += 1
+                else:
+                    self.count = 1
+                    self.write_file()
+                    if self.check_new_date():
+                        self.use_file()
+                    time.sleep(60 * random.randint(1,60))
             return True
         except BaseException as e:
             print("Error on_data: %s" % str(e))
