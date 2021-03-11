@@ -9,6 +9,8 @@ There were two main updates from the previous version of the filters list (which
 
 After these updates, the filters list now contains 2673 names, which is 11 less than the previous version. 
 
+The updated list went into effect on March 9.
+
 # Appendix
 
 Manually added accounts: MichelleObama, DrBiden, HillaryClinton, AndrewYang, TheDemocrats, HouseDemocrats, JohnKasich, SenateGOP, GOP, charliekirk11, shannonrwatts, IvankaTrump, TiffanyATrump, EricTrump, LaraLeaTrump, POTUS, StephGrisham45, KellyannePolls, FLOTUS, PressSec, SecondLady, QAnon_Report, laurenboebert, DeAnna4Congress, theangiestanton, montaga, mtgreenee, PeteHegseth, Blklivesmatter, PPFA, AMarch4OurLives, Heritage, NRA, theMRC, BillClinton,SarahPalinUSA, StephenBannon, GenFlynn, MichaelCohen212, redsteeze, Scaramucci, Reince, gtconway3d, iamjohnoliver, TheDailyShow, Trevornoah, StephenAtHome, hasanminhaj, TuckerCarlson, marklevinshow, dbongino, jonlovett, danpfeiffer, crookedmedia, realBobWoodward, Comey, davidaxelrod, HuffPost, MotherJones, NewYorker, USATODAY, TheEconomist, tweetdrudge, BreitbartNews, theblaze, RealCandaceO, realDailyWire, Alyssa_Milano, jonathanvswan, coldxman, piersmorgan, ezraklein, Mike_Pence, WestWingReport, TeamTrump, MrsVanessaTrump, DiamondandSilk, GOPChairwoman, TheOnion, ProjectLincoln, RepsForBiden, OANN, WomenforTrump, TheBabylonBee, ReverendWarnock
