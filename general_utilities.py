@@ -10,6 +10,7 @@ General routines that only need to be written once.
 import json
 import pickle
 import subprocess
+import string
 
 """
 Basic reading and writing of pickled objects or json objects to/from a file. These functions will not
@@ -95,3 +96,28 @@ def file_compress(fname):
     print ('Running gzip on', fname)
     subprocess.run (['gzip', fname])
     return
+
+def count_english(check_s, dic_s):
+    """
+    Count the number of words in a string that are also in the supplied set of words
+
+    This function takes a string and a set of words, and returns the count of the number of words in the string that
+    are also in the word set. The intended use is to have a word set that is taken from a language dictionary. Words
+    are all converted to lower case, and trailing punctuation is stripped from a word
+
+    :param check_s A string with words separated by spaces
+    :param dic_s: a set of lower-case words that act as the count authority
+    :return an integer indicating the number of words in check_s that occur in dic_s
+    """
+    eng_c = 0
+    word_l = check_s.lower().split()
+    for w in word_l:
+        if w in dic_s:
+            eng_c += 1
+        else:
+            if w[-1] in string.punctuation:
+                while len(w) > 0 and w[-1] in string.punctuation:
+                    w = w[:-1]
+                if w in dic_s:
+                    eng_c += 1
+    return eng_c

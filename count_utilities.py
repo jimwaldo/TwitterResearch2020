@@ -121,3 +121,23 @@ def generate_to_n(n, out_f_name):
         
     gt.write_pkl(out_f_name, top_10_d)
 
+def separate_by_user(tweet_l, separation_set):
+    """
+    Separate a list of tweets by the user id of the tweeters
+
+    Creates two lists of tweets. One is all of the tweets in tweet_l that are from a user_id in the user_id set
+    separation_set; the other is all of the other tweets in the list
+    :param tweet_l: A list of thinned tweets
+    :param separation_set: A set of user_id for those users whose thinned tweets are to be separated
+    :return: a pair of lists, the first of which is all tweets from users in separation_set, the other all other tweets
+    in tweet_l
+    """
+    remain_l = []
+    sep_l = []
+    for t in tweet_l:
+        if t.get_user_id() in separation_set:
+            sep_l.append(t)
+        else:
+            remain_l.append(t)
+
+    return sep_l, remain_l
