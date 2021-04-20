@@ -94,10 +94,10 @@ def distill_counts(t_l, fname_date):
     count_id = build_count_id_d(count_d)
     count_posters = build_count_posters(count_id)
     
-    gt.write_pkl('count_d_' + fname_date + base_ext, count_d)
-    gt.write_pkl('id_name_d_' + fname_date + base_ext, id_name_d)
-    gt.write_pkl('count_id_' + fname_date + base_ext, count_id)
-    gt.write_pkl('count_posters_' + fname_date + base_ext, count_posters)
+    gt.write_pkl('count_d_' + fname_date + '.pkl', count_d)
+    gt.write_pkl('id_name_d_' + fname_date + '.pkl', id_name_d)
+    gt.write_pkl('count_id_' + fname_date + '.pkl', count_id)
+    gt.write_pkl('count_posters_' + fname_date + '.pkl', count_posters)
 
 def generate_to_n(n, out_f_name):
     """
